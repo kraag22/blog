@@ -1,0 +1,183 @@
+
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<title>Why is programming hard &#8211; Kraag22</title>
+<meta name="description" content="If you hear sombody saying, that programming is hard. It is true.">
+<meta name="keywords" content="programming">
+
+<!-- DSLs for various open graph languages -->
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why is programming hard &#8211; Kraag22">
+<meta property="og:description" content="If you hear sombody saying, that programming is hard. It is true.">
+<meta property="og:url" content="/articles/programming-hard">
+<meta property="og:site_name" content="Kraag22">
+
+
+
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kraag22 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header darken">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Kraag22</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Kraag22">Home</a>
+            </li>
+            
+            
+                <li><a href="/about" >About</a></li>
+            
+                <li><a href="https://github.com/kraag22" target="_blank">Github</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article pad-top">
+
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Why is programming hard</h1>
+            <p class="date">Dec 10, 2018</p>
+            <p class="intro">If you hear sombody saying, that programming is hard. It is true.</p>
+          </hgroup>
+        </header>
+
+        <h2 id="learning">Learning</h2>
+<p>Let’s try to imagine, you want to learn same cool framework. For example <code>Polymer</code>. There is plenty of online lessons so you try this one <a href="https://egghead.io/lessons/create-a-custom-element-using-polymer">on egghead</a>. It has 4 minutes and it’s clear and understandable. Cool. But what could happen, when you try to do it yourself?</p>
+
+<h2 id="coding">Coding</h2>
+<p>First thing in lesson says that you should start with command <code>bower install polymer</code>. What could go wrong? Maybe this:</p>
+
+<pre><code>module.js:487
+    throw err;
+    ^
+
+Error: Cannot find module 'internal/fs'
+    at Function.Module._resolveFilename (module.js:485:15)
+    at Function.Module._load (module.js:437:25)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at evalmachine.&lt;anonymous&gt;:40:20
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/bower/node_modules/graceful-fs/fs.js:11:1)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+</code></pre>
+
+<p>So you will google and try to fix this. You will find, that bower is kind of deprecated and you should use yarn. But you don’t want care about yarn now, you just want to play with Polymer :) Somehow you find that there is problem with bower, because even <code>bower --version</code> fails. But bower worked fine few months ago… You can reinstall bower, it doesn’t help.</p>
+
+<h2 id="fix">Fix</h2>
+<p>So to quickly fix it, you use <code>nvm</code> to downgrade your version node. Now bower can install polymer. And after 20 minutes of work you tried to code first 5 seconds of online lesson.</p>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Why is programming hard&quot;%20https://www.kraag22.com/articles/programming-hard%20via%20&#64;kraag22" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+      </article>
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/articles/programming-hard" title="Why is programming hard">Why is programming hard </a></span>
+              <span class="date">Dec 10, 2018</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/articles/static-website-s3" title="How to host static website on S3 with https">How to host static website ... </a></span>
+              <span class="date">Nov 20, 2018</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/articles/test-post" title="Test Post">Test Post </a></span>
+              <span class="date">Aug 17, 2013</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/kraag22" target="_blank"><span class="foot-link">@kraag22</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2019 Martin Bartusek. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+
