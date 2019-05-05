@@ -36,6 +36,10 @@ em {
     background: #ffe8c0;
 }
 
+pre {
+    margin-bottom: $lh;
+}
+
 strong {
     font-weight: bold;
 }
@@ -355,7 +359,7 @@ header.site-header nav {
     display: block;
     margin: 0 auto;
     float: none;
-    padding-top: 140px;
+    padding-top: 40px;
 
     // Post Listing
     .post-list {
@@ -382,19 +386,6 @@ header.site-header nav {
                 &:hover {
                     @include transit;
                 }
-            }
-
-            a:hover:before {
-                content:'...';
-                color: $grey-light;
-                font-family: $sans;
-                position: absolute;
-                margin-left: -70px;
-                font-size: 40px;
-                left: 0;
-                top: -20px;
-                text-align: center;
-                @include transit;
             }
 
             a:before {
