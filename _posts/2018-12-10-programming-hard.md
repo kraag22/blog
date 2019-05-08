@@ -11,7 +11,7 @@ Let's try to imagine, you want to learn same cool framework. For example `Polyme
 ## Coding
 First thing in lesson says that you should start with command `bower install polymer`. What could go wrong? Maybe this:
 
-``` 
+``` javascript
 module.js:487
     throw err;
     ^
