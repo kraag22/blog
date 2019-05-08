@@ -1,0 +1,41 @@
+language: ruby
+rvm:
+  - 2.4.1
+
+install:
+  - gem install bundler
+  - bundler install
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script:
+  - bundle exec jekyll build
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+cache: bundler # caching bundler gem packages will speed up build
+
+notifications:
+  email: false
+
+addons:
+  ssh_known_hosts: 188.226.180.247
+
+before_deploy:
+  - echo "$ssh_key" | base64 -d > /tmp/deploy_key
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_key
+  - ssh-add /tmp/deploy_key
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@188.226.180.247:/srv/blog
+  on:
+    branch: master
