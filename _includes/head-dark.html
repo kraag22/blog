@@ -42,6 +42,22 @@
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
 
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//157.230.21.215/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
 <div id="bump">
   <body class="">
     <header class="site-header darken">
@@ -55,7 +71,7 @@
             <li>
               <a href="/" title="{{ site.title }}">Home</a>
             </li>
-            
+
             {% for link in site.links %}
                 <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
             {% endfor %}
