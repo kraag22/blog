@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Deploy code with Travis-CI via SSH"
-description: "How to setup SSH deployment in Travis. Store keys, "
+description: "How to setup SSH deployment in Travis"
 category: articles
 tags: [programming]
 ---
