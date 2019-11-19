@@ -24,7 +24,7 @@ notifications:
   email: false
 
 addons:
-  ssh_known_hosts: 188.226.180.247
+  ssh_known_hosts: 167.172.166.118
 
 before_deploy:
   - echo "$ssh_key" | base64 -d > /tmp/deploy_key
@@ -36,6 +36,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@188.226.180.247:/srv/blog
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@167.172.166.118:/srv/blog
   on:
     branch: master
