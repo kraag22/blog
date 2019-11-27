@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Keys & certificates cheatsheet"
-description: "List of userfull commands"
+description: "List of usefull commands"
 category: articles
 tags: [programming]
 ---
