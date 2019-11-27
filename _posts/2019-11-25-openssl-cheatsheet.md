@@ -1,5 +1,10 @@
-# Keys & certificates cheatsheet
-
+---
+layout: post-no-feature
+title: "Keys & certificates cheatsheet"
+description: "List of userfull commands"
+category: articles
+tags: [programming]
+---
 ## Keys
 
 ### generate private key

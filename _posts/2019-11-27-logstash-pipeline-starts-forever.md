@@ -1,4 +1,10 @@
-# Logstash pipeline with S3 output starts tens of minutes
+---
+layout: post-no-feature
+title: "Logstash pipeline with S3 output starts tens of minutes"
+description: "What to do when your logstash pipelines starts tens of minutes"
+category: articles
+tags: [programming]
+---
 When your logstash pipelines starts tens of minutes, you can have these problems:
 
 * [Not enought entropy](https://github.com/jruby/jruby/wiki/Improving-startup-time#ensure-your-system-has-adequate-entropy) - logstash doesn't have enought random numbers
