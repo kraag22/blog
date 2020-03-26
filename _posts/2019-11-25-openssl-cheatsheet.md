@@ -50,7 +50,10 @@ At the end is serial "serial=XXXX" take only XXXX part ad save it to file "seria
     
 ### generate client certificate
 ```openssl x509 -days 365 -req -sha512 -in xxx.csr -CAserial serial -CA rootCA.crt -CAkey ca.key -out new.crt -extensions v3_req -extensions usr_cert -extfile client.conf```
-    
+
+### check certificate
+```openssl x509 -in certificate.crt -text -noout``` 
+
 ## Config files
 
 ### server.conf
@@ -119,3 +122,4 @@ extendedKeyUsage = serverAuth, clientAuth
 * [setting certificates for Filebeat and Logstash](https://documentation.wazuh.com/3.2/installation-guide/optional-configurations/elastic_ssl.html)
 * [script for generation certs](https://gist.github.com/jhamrick/ac0404839b5c7dab24b5)
 * [tutorial for secure Logstash&Filebeat + info about config files](https://benjaminknofe.com/blog/2018/07/08/logstash-authentication-with-ssl-certificates/)
+* [certificates detailed tutoria](https://jamielinux.com/docs/openssl-certificate-authority/create-the-root-pair.html)
