@@ -122,4 +122,4 @@ extendedKeyUsage = serverAuth, clientAuth
 * [setting certificates for Filebeat and Logstash](https://documentation.wazuh.com/3.2/installation-guide/optional-configurations/elastic_ssl.html)
 * [script for generation certs](https://gist.github.com/jhamrick/ac0404839b5c7dab24b5)
 * [tutorial for secure Logstash&Filebeat + info about config files](https://benjaminknofe.com/blog/2018/07/08/logstash-authentication-with-ssl-certificates/)
-* [certificates detailed tutoria](https://jamielinux.com/docs/openssl-certificate-authority/create-the-root-pair.html)
+* [certificates detailed tutorial](https://jamielinux.com/docs/openssl-certificate-authority/create-the-root-pair.html)
