@@ -116,7 +116,7 @@ extendedKeyUsage = serverAuth, clientAuth
 
 ```
  
-## Links
+## Links and tutorials
 * [list of commands](https://gist.github.com/webtobesocial/5313b0d7abc25e06c2d78f8b767d4bc3)
 * [how to generate certificate with SAN](https://geekflare.com/san-ssl-certificate/)
 * [setting certificates for Filebeat and Logstash](https://documentation.wazuh.com/3.2/installation-guide/optional-configurations/elastic_ssl.html)
