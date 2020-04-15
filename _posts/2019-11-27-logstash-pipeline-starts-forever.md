@@ -25,3 +25,4 @@ enable_metrics=false
 * [Elasic docs for S3 output plugin](https://www.elastic.co/guide/en/logstash/current/plugins-outputs-s3.html)
 * [How to debug Logstash](https://logz.io/blog/debug-logstash/)
 * [Not enought entropy](https://github.com/jruby/jruby/wiki/Improving-startup-time#ensure-your-system-has-adequate-entropy)
+* [How to setup filebeat/logstash incredible tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04)
