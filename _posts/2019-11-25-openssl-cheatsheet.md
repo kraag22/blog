@@ -54,6 +54,9 @@ At the end is serial "serial=XXXX" take only XXXX part ad save it to file "seria
 ### check certificate
 ```openssl x509 -in certificate.crt -text -noout``` 
 
+### get server certificate
+```openssl s_client -showcerts -connect www.example.com:443```
+
 ## Config files
 
 ### server.conf
