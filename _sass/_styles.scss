@@ -388,24 +388,14 @@ header.site-header nav {
                 }
             }
 
-            a:before {
-                content:'\201c';
-                color: $grey-light;
-                position: absolute;
-                margin-left: -70px;
-                font-size: 60px;
-                z-index: 10;
-                top: -6px;
-                left: 0;
-                text-align: center;
-                @include transit;
-
-            }
-
             h1 {
                 font-size: $fs3;
                 font-style: italic;
             }
+        }
+
+        .no-title {
+            padding-top: 20px;
         }
 
         .summary {
