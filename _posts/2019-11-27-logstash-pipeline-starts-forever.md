@@ -20,7 +20,7 @@ validate_credentials_on_root_bucket=false
 enable_metrics=false
 ```
 
-## Links
+### Links
 * [Github issue](https://github.com/logstash-plugins/logstash-output-s3/issues/208)
 * [Elasic docs for S3 output plugin](https://www.elastic.co/guide/en/logstash/current/plugins-outputs-s3.html)
 * [How to debug Logstash](https://logz.io/blog/debug-logstash/)

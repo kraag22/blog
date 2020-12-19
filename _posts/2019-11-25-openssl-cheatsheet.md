@@ -5,61 +5,56 @@ description: "List of usefull commands"
 category: articles
 tags: [programming]
 ---
-## Keys
+### Keys
 
-### generate private key
+**generate private key** <br />
+ ```openssl genrsa -out private.pem 2048```
 
-```openssl genrsa -out private.pem 2048```
+**check private key** <br />
+ ```openssl pkey -in private.pem -text```
 
-### check private key
+**extract public key from private** <br />
+ ```openssl rsa -in private.pem -pubout -out pubkey.pem```
 
-```openssl pkey -in private.pem -text```
+**extract public key from private for SSH** <br />
+ ```ssh-keygen -y -f private.pem > key.pub```
 
-### extract public key from private
+**check public key** <br />
+ ```openssl rsa -inform PEM -pubin -in pubkey.pem -text -noout```
 
-```openssl rsa -in private.pem -pubout -out pubkey.pem```
+**change format of key to pkcs8** <br />
+ ```openssl pkcs8 -topk8 -nocrypt -in private.key -out private-pkcs8.key```
 
-### extract public key from private for SSH
+### Certificates
 
-```ssh-keygen -y -f private.pem > key.pub```
+**generate certificate authority from private key** <br />
+ ```openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 4096 -out rootCA.crt```
 
-### check public key
+**generate csr request using key** <br />
+ ```openssl req -sha512 -new -key xxx.key -out xxx.csr -conf config.conf```
 
-```openssl rsa -inform PEM -pubin -in pubkey.pem -text -noout```
+**check csr request** <br />
+ ```openssl req -in mydomain.com.csr -noout -text```
 
-### change format of key to pkcs8
-```openssl pkcs8 -topk8 -nocrypt -in private.key -out private-pkcs8.key```
-
-## Certificates
-
-### generate certificate authority from private key
-```openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 4096 -out rootCA.crt```
-
-### generate csr request using key
-```openssl req -sha512 -new -key xxx.key -out xxx.csr -conf config.conf```
-
-### check csr request
-```openssl req -in mydomain.com.csr -noout -text```
-
-### save serial to file
-```openssl x509 -in rootCA.crt -text -noout -serial```
+**save serial to file** <br />
+ ```openssl x509 -in rootCA.crt -text -noout -serial``` <br />
 At the end is serial "serial=XXXX" take only XXXX part ad save it to file "serial"
 
-### generate server certificate
-```openssl x509 -days 365 -req -sha512 -in xxx.csr -CAserial serial -CA rootCA.crt -CAkey ca.key -out new.crt -extensions v3_req -extfile server.conf```
+**generate server certificate** <br />
+ ```openssl x509 -days 365 -req -sha512 -in xxx.csr -CAserial serial -CA rootCA.crt -CAkey ca.key -out new.crt -extensions v3_req -extfile server.conf```
     
-### generate client certificate
-```openssl x509 -days 365 -req -sha512 -in xxx.csr -CAserial serial -CA rootCA.crt -CAkey ca.key -out new.crt -extensions v3_req -extensions usr_cert -extfile client.conf```
+**generate client certificate** <br />
+ ```openssl x509 -days 365 -req -sha512 -in xxx.csr -CAserial serial -CA rootCA.crt -CAkey ca.key -out new.crt -extensions v3_req -extensions usr_cert -extfile client.conf```
 
-### check certificate
-```openssl x509 -in certificate.crt -text -noout``` 
+**check certificate** <br />
+ ```openssl x509 -in certificate.crt -text -noout``` 
 
-### get server certificate
-```openssl s_client -showcerts -connect www.example.com:443```
+**get server certificate** <br />
+ ```openssl s_client -showcerts -connect www.example.com:443```
 
-## Config files
+### Config files
 
-### server.conf
+#### server.conf
 ```
 [req]
 distinguished_name = req_distinguished_name
@@ -86,7 +81,7 @@ DNS.1 = DOMAIN NAME
 IP.1 = IP ADDRESS
 ```
 
-### client.conf
+#### client.conf
 ```
 [req]
 distinguished_name = req_distinguished_name
@@ -119,7 +114,7 @@ extendedKeyUsage = serverAuth, clientAuth
 
 ```
  
-## Links and tutorials
+### Links and tutorials
 * [list of commands](https://gist.github.com/webtobesocial/5313b0d7abc25e06c2d78f8b767d4bc3)
 * [how to generate certificate with SAN](https://geekflare.com/san-ssl-certificate/)
 * [setting certificates for Filebeat and Logstash](https://documentation.wazuh.com/3.2/installation-guide/optional-configurations/elastic_ssl.html)
