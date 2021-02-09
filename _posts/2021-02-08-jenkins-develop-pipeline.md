@@ -54,7 +54,7 @@ Change path of validation script to correct place. Then you can use new build fo
 After you press **Cmd + B** to run build, output of the validation script will be shown on the bottom the screen.
 
 ![Jenkins with Build window](/images/jenkins-run.png)
-You can see warning about missing *agent* section in pipeline.
+You can see warning about missing **agent** section in pipeline.
 
 ### links
 * [Jenkins validate API](https://www.jenkins.io/doc/book/pipeline/development/#linter)
