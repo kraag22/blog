@@ -19,7 +19,7 @@ So you need some running instance of Jenkins. Run it locally in docker or use so
 This API validates syntax of Jenkinsfile and returns where all the issues.
 
 ### Integration to Sublime Text as Build System
-If you are using Sublime Text, you can add this validation as **Build System** and run it easily with **Cmd + B** and get instat result.
+If you are using Sublime Text, you can add this validation as **Build System** and run it easily with **Cmd + B** and get instant result.
 
 #### Validation script
 Firstly you have to create shell script, which will take path to a Jenkinsfile as param and call the API.
