@@ -15,7 +15,6 @@ addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-  ssh_known_hosts: $server_address
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
@@ -23,6 +22,9 @@ cache: bundler # caching bundler gem packages will speed up build
 
 notifications:
   email: false
+
+addons:
+  ssh_known_hosts: $server_address
 
 before_deploy:
   - echo "$ssh_key" | base64 -d > /tmp/deploy_key
