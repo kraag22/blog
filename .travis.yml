@@ -36,6 +36,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@157.230.97.10:/srv/blog
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@$server_address:/srv/blog
   on:
     branch: master
