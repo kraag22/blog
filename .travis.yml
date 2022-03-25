@@ -24,7 +24,7 @@ notifications:
   email: false
 
 addons:
-  ssh_known_hosts: "$server_address"
+  ssh_known_hosts: kraag22.com
 
 before_deploy:
   - echo "$ssh_key" | base64 -d > /tmp/deploy_key
@@ -36,6 +36,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@$server_address:/srv/blog
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site root@kraag22.com:/srv/blog
   on:
     branch: master
