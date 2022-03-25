@@ -24,7 +24,7 @@ notifications:
   email: false
 
 addons:
-  ssh_known_hosts: $server_address
+  ssh_known_hosts: "$server_address"
 
 before_deploy:
   - echo "$ssh_key" | base64 -d > /tmp/deploy_key
