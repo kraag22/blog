@@ -17,7 +17,7 @@ reverse_proxy 127.0.0.1:4000
 tls internal
 ```
 
-### run with
+### start server with config
 ```
 caddy run -config Caddyfile
 ```
@@ -25,7 +25,7 @@ caddy run -config Caddyfile
 
 You can do it even without config file with these commands
 
-### run
+### run these commands
 ```
 caddy trust
 caddy reverse-proxy --to 127.0.0.1:4000 --from localhost:2000
