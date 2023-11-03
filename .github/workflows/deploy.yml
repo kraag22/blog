@@ -31,5 +31,5 @@ jobs:
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "_site/"
           REMOTE_HOST: "kraag22.com"
-          REMOTE_PATH: "/srv/blog"
+          TARGET: "/srv/blog"
           REMOTE_USER: "root"
