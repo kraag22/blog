@@ -28,7 +28,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v4.1.10
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rltgoDzvO --delete"
+          ARGS: "-r --delete-after"
           SOURCE: "_site/"
           REMOTE_HOST: "kraag22.com"
           TARGET: "/srv/blog"
