@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Ruby 2.4.1
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
+          ruby-version: 3.2
 
       - name: Install dependencies
         run: |
@@ -30,5 +30,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "_site/"
-          REMOTE_HOST: "root@kraag22.com"
+          REMOTE_HOST: "kraag22.com"
           REMOTE_PATH: "/srv/blog"
+          REMOTE_USER: "root"
