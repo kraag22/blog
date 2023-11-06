@@ -7,7 +7,7 @@ tags: [programming]
 ---
 I wanted to improve my touch typing skills. I was able to write all characters (a-z only) without looking at the keyboard, but I had to look at all symbols and numbers. So, I will share my progress over a year of practice.
 
-I used [typing.io](typing.io) to practice typing real code. There are many languages to try, such as Bash, PHP, C, and more. This is awesome because each language uses a different set of symbols regularly. I practiced once a week for 1-2 hours.
+I used [typing.io](https://typing.io) to practice typing real code. There are many languages to try, such as Bash, PHP, C, and more. This is awesome because each language uses a different set of symbols regularly. I practiced once a week for 1-2 hours.
 
 After a year of practice, I am now able to type every character on the keyboard without looking and use both shift keys.
 
