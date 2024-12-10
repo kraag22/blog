@@ -8,15 +8,11 @@ tags: [programming]
 
 ### Usefull webpages
 
-find packages
-https://central.sonatype.com/search?q=spring-boot-starter-camunda-test
+find packages [central.sonatype.com](https://central.sonatype.com/search?q=spring-boot-starter-camunda-test)
 
-find vulnerabilities
-https://ossindex.sonatype.org/
+find vulnerabilities [ossindex.sonatype.org](https://ossindex.sonatype.org/)
 
-find CVEs
-https://nvd.nist.gov/vuln/detail/CVE-2023-2976
-
+find CVEs [nvd.nist.gov](https://nvd.nist.gov/vuln/detail/CVE-2023-2976)
 
 ### List dependencies
 
